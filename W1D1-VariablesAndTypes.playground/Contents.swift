@@ -10,7 +10,8 @@
 //: In swift, you create variables like this:
 
 var greeting = "Hello, world!"
-  
+var weather = "Hello World!!"
+
 //: There are three important parts to creating a variable: 1) writing `var` to show you are creating a new variable, 2) naming the variable,
 //: and 3) the data stored inside the variable
 //: In the example above, the name of the variable is `greeting` and the value is a string "Hello, world!"
@@ -25,6 +26,7 @@ var count = 0
 //: For example, the following code changes the data stored in the `count` variable to the number 10.
 
 count = 10
+count = 23
 
 //: *Note:* To create a new variable we write `var` before the name, when we change the data inside an existing variable we do not.
 
@@ -32,6 +34,8 @@ count = 10
 //: ### Challenge 1
 //:
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
+greeting = "hi there"
+weather = "sunny"
 
 
 
@@ -41,6 +45,9 @@ count = 10
 //: ### Challenge 2
 //:
 //: We want to add 1 to whatever the value of `count` is now. We could manually look at the value in `count`, see that it is 10 and put 11 into `count` using the assignment operator. This works, but we can do it in a better way. We can set count to be whatever count is, plus 1. See if you can figure out the syntax for this.
+count = count + 1
+count += 1
+
 
 
 //: *Note:* If you're ever unsure of the contents of a variable in a playground, write the variable on a line by itself and you will see its value printed to the right of it. Or you can use the `print` function like so: `print(variableName)`.
@@ -69,11 +76,13 @@ count
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: double
+
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is:bool
+
 
 
 //: ## Type Inference
@@ -85,10 +94,11 @@ var isOpen = true
 
 var height: Double = 10
 
+
 //: ### Challenge 4
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
-
+height = 25
 
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
@@ -104,6 +114,7 @@ var height: Double = 10
 
 var schoolName = "Lightouse Labs"
 
+greeting.append("lighthouse labs")
 
 
 //: THE END
