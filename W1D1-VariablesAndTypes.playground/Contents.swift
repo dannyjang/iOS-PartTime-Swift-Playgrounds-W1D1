@@ -26,7 +26,6 @@ var count = 0
 //: For example, the following code changes the data stored in the `count` variable to the number 10.
 
 count = 10
-count = 23
 
 //: *Note:* To create a new variable we write `var` before the name, when we change the data inside an existing variable we do not.
 
@@ -34,6 +33,7 @@ count = 23
 //: ### Challenge 1
 //:
 //: Now it's your turn. Change `greeting` to be a different string by using the assignment operator.
+
 greeting = "hi there"
 
 
@@ -95,7 +95,8 @@ var height: Double = 10
 //: ### Challenge 4
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
-count = 10
+
+count = height
 
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
@@ -109,16 +110,10 @@ count = 10
 //:
 //: Print out the uppercase and lowercase versions of the string below:
 
-var schoolName = "Lightouse Labs"
+var schoolName = "Lighthouse Labs"
 
-greeting.lowercasedString
-greeting.uppercasedString
-
-
-
-
-
-
+schoolName.lowercased()
+schoolName.uppercased()
 
 
 
